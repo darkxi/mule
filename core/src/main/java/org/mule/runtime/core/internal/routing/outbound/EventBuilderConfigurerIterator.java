@@ -4,20 +4,19 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.routing.outbound;
+package org.mule.runtime.core.internal.routing.outbound;
 
 import org.mule.runtime.core.api.Event;
 
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * Implementations must provide a way to wrap each element in a {@link Event}.
  *
  * @since 4.0
  */
-public interface EventBuilderConfigurerList<T> extends List<T> {
+public interface EventBuilderConfigurerIterator<T> extends Iterator<T> {
 
-  Iterator<EventBuilderConfigurer> eventBuilderConfigurerIterator();
+  EventBuilderConfigurer nextEventBuilderConfigurer();
 
 }
