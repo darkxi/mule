@@ -22,6 +22,7 @@ import java.nio.charset.Charset;
  * needs to be converted into an Object[] in order to be passed to a SOAP service. The input String is parsed into the array based
  * on a configurable delimiter - default is a space.
  */
+// TODO(pablo.kraan): api - used in a integration test only
 public class StringToObjectArray extends AbstractTransformer {
 
   private String delimiter = null;
