@@ -8,7 +8,7 @@ package org.mule.runtime.core.internal.transformer.graph;
 
 import org.mule.runtime.api.metadata.DataType;
 import org.mule.runtime.core.api.transformer.Converter;
-import org.mule.runtime.core.transformer.TransformerWeighting;
+import org.mule.runtime.core.internal.registry.TransformerWeighting;
 
 import java.util.Collections;
 import java.util.LinkedList;
