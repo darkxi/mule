@@ -23,6 +23,7 @@ import java.util.Map;
  * properties on the object. The bean class name can also be passed in as a property on the Map (which gets removed once read).
  * The {@link MapToBean#CLASS_PROPERTY} should be set as a fully qualified class name string.
  */
+// TODO(pablo.kraan): api - used in integration tests
 public class MapToBean extends AbstractTransformer implements DiscoverableTransformer {
 
   /**

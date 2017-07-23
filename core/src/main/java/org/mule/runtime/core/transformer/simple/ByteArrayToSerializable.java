@@ -20,6 +20,7 @@ import java.nio.charset.Charset;
 /**
  * <code>ByteArrayToSerializable</code> converts a serialized object to its object representation
  */
+// TODO(pablo.kraan): api - used in compatiblity
 public class ByteArrayToSerializable extends AbstractTransformer implements DiscoverableTransformer {
 
   /**

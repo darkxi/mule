@@ -18,7 +18,7 @@ import java.nio.charset.Charset;
  * <code>ObjectArrayToString</code> transformer is the opposite of StringToObjectArray - it simply converts Object[] to a String
  * in which each element is separated by a configurable delimiter (default is a space).
  */
-
+// TODO(pablo.kraan): api - used only in a test?
 public class ObjectArrayToString extends AbstractTransformer implements DiscoverableTransformer {
 
   /** Give core transformers a slighty higher priority */

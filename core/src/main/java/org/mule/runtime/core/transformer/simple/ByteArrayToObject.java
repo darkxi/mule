@@ -20,6 +20,7 @@ import java.nio.charset.Charset;
  * <code>ByteArrayToObject</code> works in the same way as <code>ByteArrayToSerializable</code> but checks if the byte array is a
  * serialised object and if not will return a String created from the bytes as the returnType on the transformer.
  */
+// TODO(pablo.kraan): api - used in compatiblity
 public class ByteArrayToObject extends ByteArrayToSerializable {
 
   @Override

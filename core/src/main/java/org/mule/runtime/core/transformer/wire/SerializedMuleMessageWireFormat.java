@@ -6,8 +6,8 @@
  */
 package org.mule.runtime.core.transformer.wire;
 
-import org.mule.runtime.core.transformer.simple.ByteArrayToMuleMessage;
-import org.mule.runtime.core.transformer.simple.MuleMessageToByteArray;
+import org.mule.runtime.core.internal.transformer.simple.ByteArrayToMuleMessage;
+import org.mule.runtime.core.internal.transformer.simple.MuleMessageToByteArray;
 
 /**
  * Wire format using Java serialization to serialize Message objects accross the wire
