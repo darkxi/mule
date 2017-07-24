@@ -4,7 +4,7 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.transformer.simple;
+package org.mule.runtime.core.privileged.transformer.simple;
 
 import static org.mule.runtime.core.api.config.i18n.CoreMessages.transformOnObjectUnsupportedTypeOfEndpoint;
 import static org.mule.runtime.core.api.util.IOUtils.ifInputStream;
@@ -20,7 +20,6 @@ import java.nio.charset.Charset;
  * <code>ByteArrayToObject</code> works in the same way as <code>ByteArrayToSerializable</code> but checks if the byte array is a
  * serialised object and if not will return a String created from the bytes as the returnType on the transformer.
  */
-// TODO(pablo.kraan): api - used in compatiblity
 public class ByteArrayToObject extends ByteArrayToSerializable {
 
   @Override

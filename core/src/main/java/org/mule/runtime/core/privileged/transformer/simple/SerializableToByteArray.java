@@ -4,7 +4,7 @@
  * license, a copy of which has been included with this distribution in the
  * LICENSE.txt file.
  */
-package org.mule.runtime.core.transformer.simple;
+package org.mule.runtime.core.privileged.transformer.simple;
 
 import org.mule.runtime.api.message.Message;
 import org.mule.runtime.api.metadata.DataType;
@@ -30,18 +30,6 @@ public class SerializableToByteArray extends AbstractTransformer implements Disc
   public SerializableToByteArray() {
     this.registerSourceType(DataType.fromType(Serializable.class));
     this.setReturnDataType(DataType.BYTE_ARRAY);
-  }
-
-  public boolean isAcceptMuleMessage() {
-    return this.isSourceDataTypeSupported(DataType.MULE_MESSAGE, true);
-  }
-
-  public void setAcceptMuleMessage(boolean value) {
-    if (value) {
-      this.registerSourceType(DataType.MULE_MESSAGE);
-    } else {
-      this.unregisterSourceType(DataType.MULE_MESSAGE);
-    }
   }
 
   @Override
