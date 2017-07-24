@@ -41,7 +41,7 @@ public class MuleObjectStoreManager implements ObjectStoreManager, MuleContextAw
 
   protected Scheduler scheduler;
   MuleContext muleContext;
-  protected ConcurrentMap<String, ObjectStore<?>> stores = new ConcurrentHashMap<String, ObjectStore<?>>();
+  protected ConcurrentMap<String, ObjectStore<?>> stores = new ConcurrentHashMap<>();
   private final ConcurrentMap<String, ScheduledFuture<?>> monitors = new ConcurrentHashMap<>();
   private String baseTransientStoreKey = OBJECT_STORE_DEFAULT_IN_MEMORY_NAME;
   private String basePersistentStoreKey = OBJECT_STORE_DEFAULT_PERSISTENT_NAME;
@@ -200,7 +200,9 @@ public class MuleObjectStoreManager implements ObjectStoreManager, MuleContextAw
 
   @Override
   public void dispose() {
-    scheduler.stop();
+    if (scheduler != null) {
+      scheduler.stop();
+    }
     for (ObjectStore<?> objectStore : stores.values()) {
       if (objectStore instanceof Disposable) {
         ((Disposable) objectStore).dispose();
