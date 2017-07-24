@@ -223,7 +223,7 @@
 /mule-standalone-${productVersion}/lib/opt/commons-lang3-3.6.jar
 /mule-standalone-${productVersion}/lib/opt/commons-net-3.5.jar
 /mule-standalone-${productVersion}/lib/opt/commons-pool-1.6.jar
-/mule-standalone-${productVersion}/lib/opt/commons-validator-1.4.0.jar
+/mule-standalone-${productVersion}/lib/opt/commons-validator-1.6.jar
 /mule-standalone-${productVersion}/lib/opt/cxf-api-2.7.18.jar
 /mule-standalone-${productVersion}/lib/opt/cxf-rt-management-2.7.18.jar
 /mule-standalone-${productVersion}/lib/opt/cxf-rt-bindings-soap-2.7.18.jar
